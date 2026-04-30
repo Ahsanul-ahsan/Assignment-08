@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "title": "Complete Web Development Bootcamp",
+    "instructor": "John Doe",
+    "duration": "20 hours",
+    "rating": 4.8,
+    "level": "Beginner",
+    "description": "Learn full-stack web development from scratch.",
+    "image": "https://i.ibb.co.com/8gF6FRyZ/images.jpg",
+    "category": "Development"
+  },
+  {
+    "id": 2,
+    "title": "React.js Mastery Course",
+    "instructor": "Sarah Smith",
+    "duration": "15 hours",
+    "rating": 4.7,
+    "level": "Intermediate",
+    "description": "Master React.js with hooks, context API, and real projects.",
+    "image": "https://i.ibb.co.com/27Vc8PVD/download.jpg",
+    "category": "Development"
+  },
+  {
+    "id": 3,
+    "title": "UI/UX Design Fundamentals",
+    "instructor": "Emily Johnson",
+    "duration": "10 hours",
+    "rating": 4.6,
+    "level": "Beginner",
+    "description": "Learn design principles and create user-friendly interfaces.",
+    "image": "https://i.ibb.co.com/xqWF5P7T/images.jpg",
+    "category": "Design"
+  },
+  {
+    "id": 4,
+    "title": "Python for Data Science",
+    "instructor": "Michael Brown",
+    "duration": "25 hours",
+    "rating": 4.9,
+    "level": "Intermediate",
+    "description": "Analyze data and build machine learning models using Python.",
+    "image": "https://i.ibb.co.com/PZPnnG1s/download.jpg",
+    "category": "Data Science"
+  },
+  {
+    "id": 5,
+    "title": "Digital Marketing Masterclass",
+    "instructor": "David Wilson",
+    "duration": "12 hours",
+    "rating": 4.5,
+    "level": "Beginner",
+    "description": "Learn SEO, social media marketing, and online branding.",
+    "image": "https://i.ibb.co.com/KxmNm3VH/images.jpg",
+    "category": "Marketing"
+  },
+  {
+    "id": 6,
+    "title": "Advanced JavaScript Concepts",
+    "instructor": "Alex Turner",
+    "duration": "18 hours",
+    "rating": 4.8,
+    "level": "Advanced",
+    "description": "Deep dive into closures, prototypes, async JS, and performance.",
+    "image": "https://i.ibb.co.com/FbSQM6Yh/images.jpg",
+    "category": "Development"
+  }
+]

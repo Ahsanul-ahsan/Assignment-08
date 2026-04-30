@@ -2,9 +2,12 @@
 import { authClient } from "@/lib/auth-client";
 import { Check } from "@gravity-ui/icons";
 import { Button, Description, FieldError, Form, Input, Label, TextField } from "@heroui/react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const RegistrarPage = () => {
 
+    const router = useRouter()
     const onSubmit = async (e) => {
         e.preventDefault();
         const name = e.target.name.value
@@ -19,6 +22,17 @@ const RegistrarPage = () => {
             image: photo,
             callbackURL: "/",
         });
+
+
+        if(data){
+            router.push("/")
+
+        }
+        else if(
+            alert("error")
+        )
+
+
         console.log(data, error)
     }
 
@@ -60,19 +74,16 @@ const RegistrarPage = () => {
                         if (value.length < 8) {
                             return "Password must be at least 8 characters";
                         }
-                        if (!/[A-Z]/.test(value)) {
-                            return "Password must contain at least one uppercase letter";
-                        }
-                        if (!/[0-9]/.test(value)) {
-                            return "Password must contain at least one number";
-                        }
+                        
                         return null;
                     }}
                 >
                     <Label className="font-bold">Password</Label>
                     <Input placeholder="Enter your password" />
                     <Description>
-                        Must be at least 8 characters with 1 uppercase and 1 number
+                        Must be at least 8 characters <br />
+
+                         <Link href={"/login"} className="font-bold underline">Login Now</Link>
                     </Description>
                     <FieldError />
                 </TextField>
