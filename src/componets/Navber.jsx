@@ -7,13 +7,11 @@ import { authClient } from "@/lib/auth-client";
 import { Puff } from "react-loader-spinner";
 
 const Navber = () => {
-
     const { data, isPending } = authClient.useSession();
     const user = data?.user;
     const handellogout = async () => {
         await authClient.signOut();
     }
-
     return (
         <nav className="bg-white shadow-sm sticky top-0 z-50">
             <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
@@ -28,7 +26,7 @@ const Navber = () => {
                     <Link href="/" className="hover:text-indigo-600 transition">
                         Home
                     </Link>
-                    <Link href="/courses" className="hover:text-indigo-600 transition">
+                    <Link href="/allCourse" className="hover:text-indigo-600 transition">
                         Courses
                     </Link>
                     <Link href="/profile" className="hover:text-indigo-600 transition">
@@ -81,5 +79,4 @@ const Navber = () => {
         </nav>
     );
 };
-
 export default Navber;
