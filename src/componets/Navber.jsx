@@ -6,6 +6,7 @@ import logos from "@/acesst/logo.png"
 import { authClient } from "@/lib/auth-client";
 import { Puff } from "react-loader-spinner";
 
+
 const Navber = () => {
     const { data, isPending } = authClient.useSession();
     const user = data?.user;
@@ -18,7 +19,7 @@ const Navber = () => {
                 <div className="flex items-center gap-2">
                     <Image alt="logo" width={60} height={80} src={logos}></Image>
                     <Link href="/" className="text-2xl font-bold text-indigo-600">
-                        Novaskill
+                        Tiles Gallery
                     </Link>
                 </div>
 
@@ -27,7 +28,7 @@ const Navber = () => {
                         Home
                     </Link>
                     <Link href="/allCourse" className="hover:text-indigo-600 transition">
-                        Courses
+                        All Tiles
                     </Link>
                     <Link href="/profile" className="hover:text-indigo-600 transition">
                         My Profile
@@ -73,8 +74,10 @@ const Navber = () => {
                         <Button onClick={handellogout} variant="danger">
                             Logout
                         </Button>
+                        
                     </div>
                 )}
+
             </div>
         </nav>
     );

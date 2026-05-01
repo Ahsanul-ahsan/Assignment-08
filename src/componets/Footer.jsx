@@ -10,7 +10,7 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                     <div>
                         <h1 className="text-3xl font-bold mb-3">
-                            Novaskill
+                            Tiles Gallery
                         </h1>
                         <p className="text-gray-400 text-sm leading-relaxed">
                             Empowering learners to build modern skills, explore opportunities,

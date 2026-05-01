@@ -13,7 +13,7 @@ const AllCourse = async () => {
     return (
         <div className="max-w-6xl mx-auto mt-8 mb-8">
             <div className="flex justify-between items-center max-w-6xl px-6 mb-5">
-                <h1 className="mb-5 text-2xl text-green-500 font-bold">All Courses</h1>
+                <h1 className="mb-5 text-2xl text-green-500 font-bold">All Tiles</h1>
                 <div>
                     <SearchField name="search">
                         <SearchField.Group>
