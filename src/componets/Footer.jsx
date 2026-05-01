@@ -13,8 +13,7 @@ const Footer = () => {
                             Tiles Gallery
                         </h1>
                         <p className="text-gray-400 text-sm leading-relaxed">
-                            Empowering learners to build modern skills, explore opportunities,
-                            and grow into the future of technology with confidence.
+                            Discover a wide range of premium tiles crafted for style, durability, and lasting beauty. Transform your home and commercial spaces with our exceptional collection
                         </p>
                     </div>
                     <div>

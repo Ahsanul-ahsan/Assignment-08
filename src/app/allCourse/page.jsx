@@ -1,4 +1,5 @@
-import CourseCard from "@/componets/CourseCard";
+
+import TileCard from "@/componets/TileCard";
 import {SearchField } from "@heroui/react";
 
 const dataFetch = async () => {
@@ -27,7 +28,7 @@ const AllCourse = async () => {
 
             <div className="grid grid-cols-3 gap-5 place-items-center">
                 {
-                    products.map(course => <CourseCard key={course.id} course={course}></CourseCard>)
+                    products.map(tile => <TileCard key={tile.id} tile={tile}></TileCard>)
                 }
 
             </div>
