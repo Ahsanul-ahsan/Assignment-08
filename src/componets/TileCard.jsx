@@ -37,14 +37,14 @@ const TileCard = ({ tile }) => {
                     </span>
 
                     {tile.inStock ? (
-                        <span className="text-green-500 text-xs">In Stock</span>
+                        <span className="text-green-500 font-bold text-xs">In Stock</span>
                     ) : (
-                        <span className="text-red-500 text-xs">Out of Stock</span>
+                        <span className="text-red-500 font-bold text-xs">Out of Stock</span>
                     )}
                 </div>
 
                 {/* Button */}
-                <Link href={`/tiles/${tile.id}`}>
+                <Link href={`/allCourse/${tile.id}`}>
                     <button className="mt-auto cursor-pointer w-full border border-indigo-400 text-indigo-500 py-1.5 rounded-md text-sm hover:bg-indigo-50 transition">
                         View Details
                     </button>

@@ -1,12 +1,13 @@
 import GetCard from "@/componets/GetCard";
-import HeroSection from "@/componets/HeroSection";
+import HeroSection from "@/componets/BannerSection";
+import BannerSection from "@/componets/BannerSection";
 
 
 const HomePage = () => {
 
   return (
     <div>
-      <HeroSection></HeroSection>
+      <BannerSection></BannerSection>
       <GetCard></GetCard>
     </div>
   );

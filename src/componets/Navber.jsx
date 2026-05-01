@@ -5,13 +5,16 @@ import Link from "next/link";
 import logos from "@/acesst/logo.png"
 import { authClient } from "@/lib/auth-client";
 import { Puff } from "react-loader-spinner";
-
+import { toast } from "react-toastify";
 
 const Navber = () => {
+
     const { data, isPending } = authClient.useSession();
     const user = data?.user;
     const handellogout = async () => {
         await authClient.signOut();
+        toast.warning("Logout Sucessfully")
+
     }
     return (
         <nav className="bg-white shadow-sm sticky top-0 z-50">

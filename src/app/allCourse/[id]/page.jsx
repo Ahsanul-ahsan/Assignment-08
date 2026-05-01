@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaStar } from "react-icons/fa";
+import { FaDollarSign, FaStar } from "react-icons/fa";
 
 
 const ViewCard = async ({ params }) => {
@@ -21,23 +21,15 @@ const ViewCard = async ({ params }) => {
                         className="object-cover rounded-xl"
                     />
                 </div>
-
                 {/* Content */}
                 <div className="space-y-4">
                     <h1 className="text-3xl font-bold">{aectpCourse.title}</h1>
-
-                    <p className="text-gray-500">Instructor: {aectpCourse.instructor}</p>
-
-                    <p className="text-gray-500">Duration: {aectpCourse.duration}</p>
-
-                    <p className="text-gray-500">Level: {aectpCourse.level}</p>
-
+                    <p className="text-gray-500">Instructor: {aectpCourse.description}</p>
+                    <p className="text-gray-500">Duration: {aectpCourse.category}</p>
+                    <p className="text-gray-500">Level: {aectpCourse.currency}</p>
                     <p className="text-yellow-500 font-semibold">
-                        <FaStar></FaStar> {aectpCourse.rating} Rating
+                      <FaDollarSign /> {aectpCourse.price}
                     </p>
-
-                    <p className="text-gray-700">{aectpCourse.description}</p>
-
                     <button className="cursor-pointer bg-indigo-500 text-white px-6 py-2 rounded-md hover:bg-indigo-600">
                         Enroll Now
                     </button>

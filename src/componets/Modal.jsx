@@ -14,8 +14,6 @@ export function ModalPage() {
         const { data, error } = await authClient.updateUser({
             image: photo,
             name: name,
-
-
         })
         console.log(data, error)
         if (error) {
