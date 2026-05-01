@@ -1,7 +1,7 @@
 "use client";
 import { authClient } from "@/lib/auth-client";
 import { Check } from "@gravity-ui/icons";
-import {Button,Description,FieldError,Form,Input,Label,TextField} from "@heroui/react";
+import { Button, Description, FieldError, Form, Input, Label, TextField } from "@heroui/react";
 import Link from "next/link";
 import { FcGoogle } from "react-icons/fc";
 import { FiLogIn } from "react-icons/fi";
@@ -10,10 +10,8 @@ import { toast } from "react-toastify";
 const LoginPage = () => {
     const onSubmit = async (e) => {
         e.preventDefault();
-
         const email = e.target.email.value;
         const password = e.target.password.value;
-
         const { data, error } = await authClient.signIn.email({
             email,
             password,
@@ -26,7 +24,6 @@ const LoginPage = () => {
             toast.error("Invalid email or password");
         }
     };
-
     const handleGoogle = async () => {
         await authClient.signIn.social({
             provider: "google",

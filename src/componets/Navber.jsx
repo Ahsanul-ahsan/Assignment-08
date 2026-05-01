@@ -18,7 +18,7 @@ const Navber = () => {
                 <div className="flex items-center gap-2">
                     <Image alt="logo" width={60} height={80} src={logos}></Image>
                     <Link href="/" className="text-2xl font-bold text-indigo-600">
-                        SkillSphere
+                        Novaskill
                     </Link>
                 </div>
 

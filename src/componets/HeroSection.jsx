@@ -9,12 +9,11 @@ const HeroSection = () => {
         {/* Left Content */}
         <div className="flex-1">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-            Upgrade Your Skills Today
+            Grow your future with NovaSkill
           </h1>
 
           <p className="mt-4 text-gray-600 text-lg">
-            Learn from industry experts and advance your career with practical
-            courses.
+            Learn Build Grow Your journey to future skills starts here.
           </p>
 
           <div className="mt-6 flex gap-4">
@@ -37,6 +36,7 @@ const HeroSection = () => {
               fill
               className="object-contain"
             />
+            
           </div>
         </div>
       </div>

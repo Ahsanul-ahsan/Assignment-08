@@ -1,15 +1,11 @@
 import Link from "next/link";
 import CourseCard from "./CourseCard";
-
-
 const dataFetch = async () => {
     const res = await fetch("https://assignment-08-green-two.vercel.app/data.json")
     const data = await res.json();
     const shortData = data.sort((a, b) => b.rating - a.rating).slice(0, 3);
     return shortData;
-
 }
-
 const GetCard = async () => {
     const products = await dataFetch();
     console.log(products)
@@ -27,10 +23,7 @@ const GetCard = async () => {
                 {
                     products.map(course => <CourseCard key={course.id} course={course}></CourseCard>)
                 }
-
             </div>
-
-
         </div>
     );
 };
