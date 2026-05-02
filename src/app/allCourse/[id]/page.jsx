@@ -30,6 +30,14 @@ const ViewCard = async ({ params }) => {
                     <p className="text-yellow-500 font-semibold">
                       <FaDollarSign /> {aectpCourse.price}
                     </p>
+                    <div>
+                        {aectpCourse.inStock ? (
+                        <span className="text-green-500 font-bold text-s">In Stock</span>
+                    ) : (
+                        <span className="text-red-500 font-bold text-s">Out of Stock</span>
+                    )}
+                    </div>
+                    
                     <button className="cursor-pointer bg-indigo-500 text-white px-6 py-2 rounded-md hover:bg-indigo-600">
                         Enroll Now
                     </button>

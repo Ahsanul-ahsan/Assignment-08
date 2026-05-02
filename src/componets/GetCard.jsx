@@ -18,7 +18,7 @@ const GetCard = async () => {
                 </Link>
             </div>
 
-            <div className="grid grid-cols-3 gap-5 place-items-center">
+            <div className="grid md:grid-cols-3 gap-5 place-items-center">
                 {
                     products.map(tile =>  <TileCard key={tile.id} tile={tile} ></TileCard>)
                 }
