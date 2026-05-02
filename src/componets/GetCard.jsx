@@ -12,7 +12,9 @@ const GetCard = async () => {
     return (
         <div className="max-w-6xl mx-auto">
             <div className="flex justify-between items-center max-w-6xl px-6 mb-5">
-                <h1 className="mb-5 text-2xl text-blue-500 font-bold">Featured Tiles</h1>
+                <h1 className="mb-5 text-2xl text-blue-500 font-bold animate__animated animate__backInDown">
+                    Featured Tiles
+                </h1>
                 <Link href={"/allCourse"}>
                     <p className="font-bold text-blue-500 hover:underline">View All Tiles</p>
                 </Link>
@@ -20,7 +22,7 @@ const GetCard = async () => {
 
             <div className="grid md:grid-cols-3 gap-5 place-items-center">
                 {
-                    products.map(tile =>  <TileCard key={tile.id} tile={tile} ></TileCard>)
+                    products.map(tile => <TileCard key={tile.id} tile={tile} ></TileCard>)
                 }
             </div>
         </div>

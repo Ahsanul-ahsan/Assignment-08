@@ -8,10 +8,11 @@ import { authClient } from "@/lib/auth-client";
 import { Puff } from "react-loader-spinner";
 import { toast } from "react-toastify";
 import { HiMenu, HiX } from "react-icons/hi";
+import { usePathname } from "next/navigation";
 
 const Navber = () => {
+    const pathname = usePathname();
     const [isOpen, setIsOpen] = useState(false);
-
     const { data, isPending } = authClient.useSession();
     const user = data?.user;
 
@@ -26,21 +27,21 @@ const Navber = () => {
             <Link
                 href="/"
                 onClick={() => setIsOpen(false)}
-                className="hover:text-indigo-600 transition"
+                className={`hover:text-indigo-600 transition ${pathname=="/" ? "text-green-500 font-bold underline" : ""}`}
             >
                 Home
             </Link>
             <Link
                 href="/allCourse"
                 onClick={() => setIsOpen(false)}
-                className="hover:text-indigo-600 transition"
+                 className={`hover:text-indigo-600 transition ${pathname=="/allCourse" ? "text-green-500 font-bold underline" : ""}`}
             >
                 All Tiles
             </Link>
             <Link
                 href="/profile"
                 onClick={() => setIsOpen(false)}
-                className="hover:text-indigo-600 transition"
+                className={`hover:text-indigo-600 transition ${pathname=="/profile" ? "text-green-500 font-bold underline" : ""}`}
             >
                 My Profile
             </Link>
@@ -153,7 +154,7 @@ const Navber = () => {
                                 />
                             </div>
                         ) : !user ? (
-                            <div className="flex gap-4 ">
+                            <div className="flex  ">
                                 <Link href="/login">
                                     <Button
                                         className="w-20 border-blue-500 font-bold hover:bg-blue-500 hover:text-white"

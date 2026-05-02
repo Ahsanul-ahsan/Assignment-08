@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import heroimg from "@/acesst/images-hee.jpg";
+import Link from "next/link";
 
 const BannerSection = () => {
   return (
@@ -25,9 +26,11 @@ const BannerSection = () => {
           </p>
 
           <div className="mt-8 md:mt-10 flex flex-row justify-center md:justify-start gap-4">
+            <Link href={"/allCourse"}>
             <button className="cursor-pointer px-6 py-3 md:px-8 md:py-4 bg-[#001f3f] text-white font-bold rounded-lg shadow-lg hover:scale-105 transition-all">
               Browse Now
             </button>
+            </Link>
 
             <button className="cursor-pointer px-6 py-3 md:px-8 md:py-4 border-2 border-[#001f3f] text-[#001f3f] font-bold rounded-lg bg-white/20 backdrop-blur-sm hover:bg-white/40 transition-all">
               Get Started

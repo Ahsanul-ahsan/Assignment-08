@@ -1,18 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaDollarSign, FaStar } from "react-icons/fa";
-
-
+import { FaDollarSign} from "react-icons/fa";
 const ViewCard = async ({ params }) => {
     const { id } = await params;
     const res = await fetch("https://assignment-08-green-two.vercel.app/data.json");
     const data = await res.json();
     const aectpCourse = data.find(c => c.id == id);
-
     return (
         <div className="w-11/12 mx-auto py-10">
             <div className="grid md:grid-cols-2 gap-10 items-center">
-                {/* Image */}
                 <div className="relative w-full h-75">
                     <Image
                         src={aectpCourse.image}
@@ -21,7 +17,6 @@ const ViewCard = async ({ params }) => {
                         className="object-cover rounded-xl"
                     />
                 </div>
-                {/* Content */}
                 <div className="space-y-4">
                     <h1 className="text-3xl font-bold">{aectpCourse.title}</h1>
                     <p className="text-gray-500">Instructor: {aectpCourse.description}</p>
